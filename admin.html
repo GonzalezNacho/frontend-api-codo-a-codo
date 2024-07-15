@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="shortcut icon" href="./assets/img/claquetaW32.png" type="image/x-icon">
+    <title>Api Codo a Codo</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/claquetaWh32.png" alt="logo">
+        <nav >
+            <a id="user"></a>
+            <a id="logout" class="boton">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="modal"></div>
+        <h2>API Codo a Codo</h2>
+        <section id="botones">
+            <form id="form-request">
+                <input type="text" name="url" id="url" placeholder="endpoint" pattern="^/.*" size="30" required />
+                <select name="method" id="method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="DELETE">DELETE</option>
+                </select>
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+            <div id="resultados">
+                <pre id="results"></pre>
+            </div>
+        </section>
+        <section id="editar-usuario">
+            <button id="boton-editar-usuario">Editar usuario</button>
+        </section>
+    </main>
+    <footer>- Gonzalez Escalada Ignacio -</footer>
+    <script type="module" src="./assets/js/admin.js"></script>
+    <script type="module" src="./assets/js/logout.js"></script>
+</body>
+</html>

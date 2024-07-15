@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="shortcut icon" href="./assets/img/claquetaW32.png" type="image/x-icon">
+    <title>Api Codo a Codo</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/claquetaWh32.png" alt="logo">
+        <nav >
+            <a id="user"></a>
+            <a id="logout" class="boton">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="modal"></div>
+        <h2>API Codo a Codo</h2>
+        <section id="botones">
+            <div>
+                <button id="traer-peliculas"> Peliculas</button>
+                <button id="traer-directores"> Directores</button>
+                <button id="traer-usuarios"> Usuarios</button>
+                <button id="traer-comentarios"> Comentarios</button>
+            </div>
+            <div id="resultados">
+                <pre id="results"></pre>
+            </div>
+        </section>
+        <section id="comentarios">
+            <form id="form-comment">
+                <select name="method" id="method">
+                    <option value="POST">Añadir</option>
+                    <option value="PUT">Editar</option>
+                </select>
+                <input id="requestId" type="number" min="1" placeholder="Id" required>
+                <input id="rating" type="number" min="1" max="10" placeholder="Puntaje" required>
+                <input id="comment" type="text" placeholder="Comentario" required>
+                <input type="submit" value="Añadir/Editar comentario">
+            </form>
+        </section>
+        <section id="editar-usuario">
+            <button id="boton-editar-usuario">Editar usuario</button>
+        </section>
+    </main>
+    <footer>- Gonzalez Escalada Ignacio -</footer>
+    <script type="module" src="./assets/js/user.js"></script>
+    <script type="module" src="./assets/js/logout.js"></script>
+</body>
+</html>
