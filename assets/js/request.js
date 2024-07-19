@@ -1,4 +1,4 @@
-export const link ='https://api-codo-a-codo.onrender.com';
+export const link ='https://api-codo-a-codo.onrender.com/api';
 
 export async function mostrarJsonEnHtml(query, token = null, method = 'GET') {
     const Authorization = token ? `Bearer ${token}` : '';
